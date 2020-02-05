@@ -2,7 +2,7 @@
 
 This is a simple terraform module that creates infrastructure for three tier web application in Oracle cloud. It creates VCN, 2 subnets along with Route Tables, Network Security Groups, and optional bastion server, webserver instance and a database.
 
-![Web Application Architecture](.\docs\architecture.png)
+![Web Application Architecture](/docs/architecture.png)
 
 
 ### How to use this Module
