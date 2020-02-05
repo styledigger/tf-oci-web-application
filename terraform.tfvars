@@ -29,5 +29,5 @@ database = {
   db_system_display_name  = "Database"
   license_model           = "BRING_YOUR_OWN_LICENSE" # BRING_YOUR_OWN_LICENSE | LICENSE_INCLUDED
   node_count              = "1"
-  ssh_public_key          = "ssh-rsa AAAAB3N..."
+  ssh_public_key          = ["ssh-rsa AAAAB3N..."]
 }
