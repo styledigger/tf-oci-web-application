@@ -7,7 +7,8 @@ variable subnet_id {}
 variable nsg_ids {}
 
 output db_connect_string {
-  value       = oci_database_db_system.db_system.db_home[0].database[0].connection_strings[0].cdb_default
+  #  value       = oci_database_db_system.db_system[0].db_home[0].database[0].connection_strings[0].cdb_default
+  value       = var.database.create_db ? oci_database_db_system.db_system[0].db_home[0].database[0].connection_strings[0].cdb_default : "None"
   description = "Database connect string"
 }
 

@@ -3,6 +3,7 @@ data oci_identity_availability_domains ad {
 }
 
 resource "oci_database_db_system" db_system {
+  count               = var.database.create_db ? 1 : 0
   availability_domain = data.oci_identity_availability_domains.ad.availability_domains[var.database.ad_number].name
   compartment_id      = var.compartment_ocid
   database_edition    = var.database.db_edition

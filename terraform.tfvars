@@ -4,7 +4,7 @@ network = {
   cidr_block_public  = "10.0.0.0/24"
   cidr_block_private = "10.0.10.0/24"
   create_bastion     = "true"
-  ssh_public_key     = "ssh-rsa AAAAB3N..."
+  ssh_public_key     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIZCVhxk8hcS9xtT4Wf6E4SZsIlLGNTwIKvawKW3S2PBGYmicrpzCaHzmeUS1ipbmC/8XNwpjVACr2QhV5nnH1+Z5/NloCFCrtPimzr1aXAxRGgfYycGztiUetde0HuN/VQ+ockODa4vKVkSE565X28xpADW4jN/w6PuoAjRo10wFBfRW/Kz1VXYC/ZdxounTZbIHEo8Ne6lIuWBgSLwUyF1NtkxenwsTv0wd4BSujgI7/ZCitY9cULDsWmDugb4NIPeelXBnLFFTQyLl5nEboECPO2dnuV1uehRWESdwrdj0ndvvx8ZA6HT9/A5vGZ7eVHTlkn5XROUI1Od3KwWNP"
 }
 
 webserver = {
@@ -13,10 +13,11 @@ webserver = {
   shape            = "VM.Standard2.1" # https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm
   assign_public_ip = "true"
   hostname_label   = "webserver"
-  ssh_public_key   = "ssh-rsa AAAAB3N..."
+  ssh_public_key   = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIZCVhxk8hcS9xtT4Wf6E4SZsIlLGNTwIKvawKW3S2PBGYmicrpzCaHzmeUS1ipbmC/8XNwpjVACr2QhV5nnH1+Z5/NloCFCrtPimzr1aXAxRGgfYycGztiUetde0HuN/VQ+ockODa4vKVkSE565X28xpADW4jN/w6PuoAjRo10wFBfRW/Kz1VXYC/ZdxounTZbIHEo8Ne6lIuWBgSLwUyF1NtkxenwsTv0wd4BSujgI7/ZCitY9cULDsWmDugb4NIPeelXBnLFFTQyLl5nEboECPO2dnuV1uehRWESdwrdj0ndvvx8ZA6HT9/A5vGZ7eVHTlkn5XROUI1Od3KwWNP"
 }
 
 database = {
+  create_db               = "false"
   db_name                 = "database"
   db_edition              = "STANDARD_EDITION" # STANDARD_EDITION | ENTERPRISE_EDITION | ENTERPRISE_EDITION_HIGH_PERFORMANCE | ENTERPRISE_EDITION_EXTREME_PERFORMANCE 
   pdb_name                = "pdb_1"
@@ -29,5 +30,5 @@ database = {
   db_system_display_name  = "Database"
   license_model           = "BRING_YOUR_OWN_LICENSE" # BRING_YOUR_OWN_LICENSE | LICENSE_INCLUDED
   node_count              = "1"
-  ssh_public_key          = ["ssh-rsa AAAAB3N..."]
+  ssh_public_key          = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIZCVhxk8hcS9xtT4Wf6E4SZsIlLGNTwIKvawKW3S2PBGYmicrpzCaHzmeUS1ipbmC/8XNwpjVACr2QhV5nnH1+Z5/NloCFCrtPimzr1aXAxRGgfYycGztiUetde0HuN/VQ+ockODa4vKVkSE565X28xpADW4jN/w6PuoAjRo10wFBfRW/Kz1VXYC/ZdxounTZbIHEo8Ne6lIuWBgSLwUyF1NtkxenwsTv0wd4BSujgI7/ZCitY9cULDsWmDugb4NIPeelXBnLFFTQyLl5nEboECPO2dnuV1uehRWESdwrdj0ndvvx8ZA6HT9/A5vGZ7eVHTlkn5XROUI1Od3KwWNP"]
 }
