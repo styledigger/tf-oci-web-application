@@ -32,3 +32,14 @@ database = {
   node_count              = "1"
   ssh_public_key          = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIZCVhxk8hcS9xtT4Wf6E4SZsIlLGNTwIKvawKW3S2PBGYmicrpzCaHzmeUS1ipbmC/8XNwpjVACr2QhV5nnH1+Z5/NloCFCrtPimzr1aXAxRGgfYycGztiUetde0HuN/VQ+ockODa4vKVkSE565X28xpADW4jN/w6PuoAjRo10wFBfRW/Kz1VXYC/ZdxounTZbIHEo8Ne6lIuWBgSLwUyF1NtkxenwsTv0wd4BSujgI7/ZCitY9cULDsWmDugb4NIPeelXBnLFFTQyLl5nEboECPO2dnuV1uehRWESdwrdj0ndvvx8ZA6HT9/A5vGZ7eVHTlkn5XROUI1Od3KwWNP"]
 }
+
+# My Keys
+fingerprint="d9:38:21:05:bb:e3:d5:3d:5a:c9:eb:b9:3e:d6:cd:e2"
+private_key_path="C:\\Users\\MKUNA\\.keys\\mkuna.pem"
+
+# oraseemeaceeociworkshop - Slovakia/tf
+tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaa3hpyedl2ltwtfpoml7lc3cu2v62bow37ltez6c2ncxodtk5dhqxa"
+user_ocid="ocid1.user.oc1..aaaaaaaau34fsfdfanmurjked4rdaxxqan6hqrxgvwdmb3htrzakswhqkx3a"
+compartment_ocid="ocid1.compartment.oc1..aaaaaaaaustn5gz3wdbs6a3zqqvreig3qxpa3n5azqa5aln3udhp56riwi4q"
+# region="eu-frankfurt-1
+region="us-ashburn-1"

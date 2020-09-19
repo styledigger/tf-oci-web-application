@@ -49,7 +49,7 @@ resource oci_core_route_table rt_intranet {
 
   route_rules {
     description       = "Service Gateway"
-    destination       = "all-fra-services-in-oracle-services-network"
+    destination       = "oci-iad-objectstorage"
     destination_type  = "SERVICE_CIDR_BLOCK"
     network_entity_id = oci_core_service_gateway.service_gw.id
   }
@@ -97,7 +97,7 @@ resource oci_core_service_gateway service_gw {
   compartment_id = var.compartment_ocid
   vcn_id         = oci_core_vcn.vcn.id
   services {
-    service_id = "ocid1.service.oc1.eu-frankfurt-1.aaaaaaaa7ncsqkj6lkz36dehifizupyn6qjqsmtepsegs23yyntnsy7qrvea"
+    service_id = "ocid1.service.oc1.iad.aaaaaaaa74z6sqsezqf6znyomdp5jkvfwb4j2ol33abgosvnhxcqphyl3eaq"
   }
 } # service_gw
 

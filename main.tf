@@ -17,6 +17,7 @@ module webserver {
   nsg_ids          = [module.network.nsg_ids["ssh"], module.network.nsg_ids["web"]]
   compartment_ocid = var.compartment_ocid
   tenancy_ocid     = var.tenancy_ocid
+  private_key_path = var.private_key_path
 }
 
 module database {

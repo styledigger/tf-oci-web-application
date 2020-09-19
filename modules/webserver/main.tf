@@ -17,7 +17,7 @@ resource oci_core_instance webserver {
 
   metadata = {
     ssh_authorized_keys = var.webserver.ssh_public_key
-    user_data           = base64encode(file("./nginx.sh"))
+    # user_data           = base64encode(file("./nginx.sh"))
     # user_data = "${base64encode(file(var.custom_bootstrap_file_name))}"
   }
 
@@ -27,4 +27,24 @@ resource oci_core_instance webserver {
   }
 
   preserve_boot_volume = false
+}
+
+resource "null_resource" "install_webserver" {
+  connection {
+    host        = oci_core_instance.webserver.public_ip
+    private_key = file(var.private_key_path)
+    timeout     = "10m"
+    type        = "ssh"
+    user        = "opc"
+  }
+  
+  provisioner "remote-exec" {
+    inline = [
+      "sudo yum install -y nginx",
+      "sudo systemctl start nginx.service",
+      "sudo firewall-cmd --zone=public --permanent --add-service=http",
+      "sudo firewall-cmd --zone=public --permanent --add-service=https",
+      "sudo firewall-cmd --reload"      
+    ]
+  }
 }

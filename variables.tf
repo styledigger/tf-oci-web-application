@@ -7,11 +7,11 @@ variable image_id {
   type = map
   default = {
     // See https://docs.cloud.oracle.com/iaas/images/
-    // Oracle-provided image "Oracle-Linux-7.7-2020.01.28-0"
-    us-phoenix-1   = "ocid1.image.oc1.phx.aaaaaaaamff6sipozlita6555ypo5uyqo2udhjqwtrml2trogi6vnpgvet5q"
-    us-ashburn-1   = "ocid1.image.oc1.iad.aaaaaaaamspvs3amw74gzpux4tmn6gx4okfbe3lbf5ukeheed6va67usq7qq"
-    eu-frankfurt-1 = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaa4xluwijh66fts4g42iw7gnixntcmns73ei3hwt2j7lihmswkrada"
-    uk-london-1    = "ocid1.image.oc1.uk-london-1.aaaaaaaa2jxzt25jti6n64ks3hqbqbxlbkmvel6wew5dc2ms3hk3d3bdrdoa"
+    // Oracle-provided image "Oracle-Linux-8.2-2020.08.27-0"
+    us-phoenix-1   = "ocid1.image.oc1.phx.aaaaaaaack6wlu7smv5rrk3lofsmzgnc2a42isfchpui555lewm2irlaj6gq"
+    us-ashburn-1   = "ocid1.image.oc1.iad.aaaaaaaanu3i6pwzymsvc5xelxlr2hy2ng7maqg4q7vwp5pr6obv2blyta7q"
+    eu-frankfurt-1 = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaa7tpqkexxldw2jc5xdu24f6rsgtv4femioc4iibcqpdpgzf2egfpa"
+    uk-london-1    = "ocid1.image.oc1.uk-london-1.aaaaaaaattlrrstelpdotpotqqvvxsnkwrezud2kwgcktprpst4qds4o2jlq"
   }
 }
 

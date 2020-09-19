@@ -10,6 +10,6 @@ This is a simple terraform module that creates infrastructure for three tier web
 This repo contains 3 terraform modules - Network, Database and Webserver. They are all invoked from main.tf in root folder.
 
 To deploy the infrastructure:
-1. set environment variables in `tfenv.cmd` and execute the script `.\tfenv.cmd`
+1. set environment variable(s) in `tfenv.cmd` and execute the script `.\tfenv.cmd`
 2. set attributes for individual modules in `terraform.tfvars`
 3. run `terraform init`, followed by `terraform plan` and `terraform apply`

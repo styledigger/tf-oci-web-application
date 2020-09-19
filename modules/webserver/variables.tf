@@ -5,6 +5,7 @@ variable image_id {}
 variable vcn_id {}
 variable subnet_id {}
 variable nsg_ids {}
+variable private_key_path {}
 
 output public_ip {
   value       = oci_core_instance.webserver.public_ip
