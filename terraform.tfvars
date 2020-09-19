@@ -17,7 +17,7 @@ webserver = {
 }
 
 database = {
-  create_db               = "false"
+  create_db               = "true"
   db_name                 = "database"
   db_edition              = "STANDARD_EDITION" # STANDARD_EDITION | ENTERPRISE_EDITION | ENTERPRISE_EDITION_HIGH_PERFORMANCE | ENTERPRISE_EDITION_EXTREME_PERFORMANCE 
   pdb_name                = "pdb_1"
